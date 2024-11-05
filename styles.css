@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:  #507675;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #343c54;
+    
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: rgb(243, 232, 232);
+    text-decoration: none;
+}
+
+#welcome-section {
+    width: 80vw;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #343c54; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the columns */
+}
+
+.welcome-column {
+    flex: 1;
+    text-align: center;
+}
+
+.image-column .profile-picture {
+    width: 100%;
+    max-width: 300px; /* Restrict the image size */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-column h1 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: #e9dddd;
+}
+
+.text-column p {
+    color: #f7f0f0;
+}
+
+@media (max-width: 600px) {
+    #welcome-section {
+        flex-direction: column; /* Stack columns on small screens */
+        text-align: center;
+    }
+
+    .welcome-column {
+        margin-bottom: 20px;
+    }
+}
+#skills {
+    padding: 50px;
+    text-align: center;
+    background-color: #343c54; 
+    border-radius: 20px; 
+    width: 80vw; 
+    color:white;
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.skills-column {
+    flex: 1;
+    text-align: left; 
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-column li {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column; 
+    }
+
+    #skills {
+        width: 90vw; 
+    }
+}
+
+
+
+#projects {
+    height: 60vh;
+    width:80vw;
+    padding: 50px;
+    text-align: center;
+    background-color: #343c54;;
+    margin: 10vh auto;
+    color:white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-tile {
+    margin: 20px 0;
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+}
